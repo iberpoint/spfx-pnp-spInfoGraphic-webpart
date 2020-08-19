@@ -19,7 +19,7 @@
     "group": { "default": "Other" },
     "title": { "default": "InfoGraphics" },
     "description": { "default": "sp-info-graphic description" },
-    "iconImageUrl": "https://6698kvkk.sharepoint.com/sites/CDN/CDNFiles/animat-linechart-color.gif",
+    "iconImageUrl": "https://{yoursite}.sharepoint.com/sites/CDN/CDNFiles/animat-linechart-color.gif", //Store your gif icon in a document library
     "properties": {
       "description": "InfoGraphics"
     }

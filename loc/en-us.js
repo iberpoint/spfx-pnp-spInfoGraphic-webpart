@@ -1,7 +1,7 @@
 define([], function() {
   return {
-    "PropertyPaneDescription": "Özellikler",
-    "BasicGroupName": "Genel Ayarlar",
-    "DescriptionFieldLabel": "Başlık"
+    "PropertyPaneDescription": "Properties",
+    "BasicGroupName": "General Settings",
+    "DescriptionFieldLabel": "Title"
   }
 });

@@ -27,17 +27,17 @@ var SpInfoGraphic = /** @class */ (function (_super) {
         return (React.createElement("div", { className: styles.spInfoGraphic },
             React.createElement("div", { className: styles.container },
                 React.createElement("div", { className: styles.row },
-                    React.createElement("div", { style: { backgroundColor: escape(this.props.Kutu1Renk) }, className: styles.blue },
+                    React.createElement("div", { style: { backgroundColor: escape(this.props.Box1Colour) }, className: styles.blue },
                         React.createElement("span", { className: styles.departman_span1 }, this.state.depitems),
                         React.createElement("span", { className: styles.departman_span2 },
-                            escape(this.props.Kutu1Baslik),
+                            escape(this.props.Box1Title),
                             " ")),
                     React.createElement("div", { className: styles.normalblue },
                         React.createElement("span", { className: styles.birim_span1 }, this.state.birimitems),
-                        React.createElement("span", { className: styles.birim_span2 }, "Birim")),
+                        React.createElement("span", { className: styles.birim_span2 }, "Unit")),
                     React.createElement("div", { className: styles.lightblue },
                         React.createElement("span", { className: styles.kisiselveri_span1 }, this.state.verilisteitems),
-                        React.createElement("span", { className: styles.kisiselveri_span2 }, "Ki\u015Fisel Veri"))))));
+                        React.createElement("span", { className: styles.kisiselveri_span2 }, "Personal Information"))))));
     };
     SpInfoGraphic.prototype.componentDidMount = function () {
         debugger;
@@ -45,9 +45,9 @@ var SpInfoGraphic = /** @class */ (function (_super) {
     };
     SpInfoGraphic.prototype._getListCustomerData = function () {
         var _this = this;
-        pnp.sp.web.lists.getById(this.props.Kutu1Liste).get().then(function (result) { return _this.setState({ depitems: result.ItemCount }); });
-        pnp.sp.web.lists.getById('Birim Listesi').get().then(function (result) { return _this.setState({ birimitems: result.ItemCount }); });
-        pnp.sp.web.lists.getById('Kişisel Veri Listesi').get().then(function (result) { return _this.setState({ verilisteitems: result.ItemCount }); });
+        pnp.sp.web.lists.getById(this.props.Box1List).get().then(function (result) { return _this.setState({ depitems: result.ItemCount }); });
+        pnp.sp.web.lists.getById('Units List').get().then(function (result) { return _this.setState({ birimitems: result.ItemCount }); });
+        pnp.sp.web.lists.getById('Personal Data List').get().then(function (result) { return _this.setState({ verilisteitems: result.ItemCount }); });
         //sessionStorage.setItem("departman_adet",result.ItemCount)  
     };
     return SpInfoGraphic;

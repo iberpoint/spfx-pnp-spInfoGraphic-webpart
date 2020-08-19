@@ -1,15 +1,15 @@
 export interface ISpInfoGraphicProps {
-    Kutu1Liste: string;
-    Kutu1Baslik: string;
-    Kutu1Renk: string;
-    Kutu2Liste: string;
-    Kutu2Baslik: string;
-    Kutu2Renk: string;
-    Kutu3Liste: string;
-    Kutu3Baslik: string;
-    Kutu3Renk: string;
-    Kutu4Liste: string;
-    Kutu4Baslik: string;
-    Kutu4Renk: string;
+    Box1List: string;
+    Box1Title: string;
+    Box1Colour: string;
+    Box2List: string;
+    Box2Title: string;
+    Box2Colour: string;
+    Box3List: string;
+    Box3Title: string;
+    Box3Colour: string;
+    Box4List: string;
+    Box4Title: string;
+    Box4Colour: string;
 }
 //# sourceMappingURL=ISpInfoGraphicProps.d.ts.map

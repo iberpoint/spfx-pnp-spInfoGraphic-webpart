@@ -23,18 +23,18 @@ var SpInfoGraphicWebPart = /** @class */ (function (_super) {
     }
     SpInfoGraphicWebPart.prototype.render = function () {
         var element = React.createElement(SpInfoGraphic, {
-            Kutu1Liste: this.properties.Kutu1Liste,
-            Kutu1Baslik: this.properties.Kutu1Baslik,
-            Kutu1Renk: this.properties.Kutu1Renk,
-            Kutu2Liste: this.properties.Kutu2Liste,
-            Kutu2Baslik: this.properties.Kutu2Baslik,
-            Kutu2Renk: this.properties.Kutu2Renk,
-            Kutu3Liste: this.properties.Kutu3Liste,
-            Kutu3Baslik: this.properties.Kutu3Baslik,
-            Kutu3Renk: this.properties.Kutu3Renk,
-            Kutu4Liste: this.properties.Kutu4Liste,
-            Kutu4Baslik: this.properties.Kutu4Baslik,
-            Kutu4Renk: this.properties.Kutu4Renk
+            Box1List: this.properties.Box1List,
+            Box1Title: this.properties.Box1Title,
+            Box1Colour: this.properties.Box1Colour,
+            Box2List: this.properties.Box2List,
+            Box2Title: this.properties.Box2Title,
+            Box2Colour: this.properties.Box2Colour,
+            Box3List: this.properties.Box3List,
+            Box3Title: this.properties.Box3Title,
+            Box3Colour: this.properties.Box3Colour,
+            Box4List: this.properties.Box4List,
+            Box4Title: this.properties.Box4Title,
+            Box4Colour: this.properties.Box4Colour
         });
         ReactDom.render(element, this.domElement);
     };
@@ -57,24 +57,24 @@ var SpInfoGraphicWebPart = /** @class */ (function (_super) {
             pages: [
                 {
                     header: {
-                        description: "Kutu #1 - Özellikler"
+                        description: "Box #1 - Properties"
                     },
                     groups: [
                         {
                             groupName: strings.BasicGroupName,
                             groupFields: [
-                                PropertyPaneLabel('labelKutu1Baslik', {
-                                    text: "Kutu #1 - Başlık Ekle"
+                                PropertyPaneLabel('labelBox1Title', {
+                                    text: "Box #1 - Add Title"
                                 }),
-                                PropertyPaneTextField('Kutu1Baslik', {
-                                    label: strings.Kutu1Baslik
+                                PropertyPaneTextField('Box1Title', {
+                                    label: strings.Box1Title
                                 }),
-                                PropertyPaneLabel('labelKutu1Renk', {
-                                    text: "Kutu #1 - Renk Seç"
+                                PropertyPaneLabel('labelBox1Colour', {
+                                    text: "Box #1 - Choose Colour"
                                 }),
-                                PropertyFieldColorPicker('Kutu1Renk', {
-                                    label: 'Color',
-                                    selectedColor: this.properties.Kutu1Renk,
+                                PropertyFieldColorPicker('Box1Colour', {
+                                    label: 'Colour',
+                                    selectedColor: this.properties.Box1Colour,
                                     onPropertyChange: this.onPropertyPaneFieldChanged,
                                     properties: this.properties,
                                     disabled: false,
@@ -84,12 +84,12 @@ var SpInfoGraphicWebPart = /** @class */ (function (_super) {
                                     iconName: 'Precipitation',
                                     key: 'colorFieldId'
                                 }),
-                                PropertyPaneLabel('labelKutu1Liste', {
-                                    text: "Kutu #1 - Liste Seç"
+                                PropertyPaneLabel('labelBox1List', {
+                                    text: "Box #1 - Choose List"
                                 }),
-                                PropertyFieldListPicker('Kutu1Liste', {
-                                    label: 'Liste Seç',
-                                    selectedList: this.properties.Kutu1Liste,
+                                PropertyFieldListPicker('Box1List', {
+                                    label: 'Choose List',
+                                    selectedList: this.properties.Box1List,
                                     includeHidden: false,
                                     orderBy: PropertyFieldListPickerOrderBy.Title,
                                     disabled: false,
@@ -106,7 +106,7 @@ var SpInfoGraphicWebPart = /** @class */ (function (_super) {
                 },
                 {
                     header: {
-                        description: "Kutu #2 - Özellikler"
+                        description: "Box #2 - Properties"
                     },
                     groups: [
                         {
@@ -117,7 +117,7 @@ var SpInfoGraphicWebPart = /** @class */ (function (_super) {
                 },
                 {
                     header: {
-                        description: "Kutu #3 - Özellikler"
+                        description: "Box #3 - Properties"
                     },
                     groups: [
                         {
@@ -128,7 +128,7 @@ var SpInfoGraphicWebPart = /** @class */ (function (_super) {
                 },
                 {
                     header: {
-                        description: "Kutu #4 - Özellikler"
+                        description: "Box #4 - Properties"
                     },
                     groups: [
                         {
